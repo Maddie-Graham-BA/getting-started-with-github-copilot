@@ -74,6 +74,46 @@ section h3 {
   margin-bottom: 8px;
 }
 
+/* Participants list styling */
+.participants-title {
+  margin-top: 10px;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #333;
+}
+
+.participants-list {
+  list-style: none;
+  margin-left: 20px;
+  margin-top: 6px;
+  display: block;
+  padding-left: 0;
+  max-height: 160px;
+  overflow-y: auto;
+}
+
+/* each participant shown as a subtle chip (also applies to list items) */
+.participants-list li {
+  display: inline-block;
+  background: #eef2ff;
+  color: #1a237e;
+  padding: 6px 10px;
+  margin: 4px 6px 4px 0;
+  border-radius: 16px;
+  font-size: 14px;
+  list-style: none;
+}
+
+/* when there are no participants */
+.participants-list li.no-participants {
+  background: transparent;
+  color: #666;
+  padding: 0;
+  margin: 0;
+  display: block;
+  border-radius: 0;
+}
+
 .form-group {
   margin-bottom: 15px;
 }
@@ -141,4 +181,18 @@ footer {
   margin-top: 30px;
   padding: 20px;
   color: #666;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: #dc3545;
+  cursor: pointer;
+  font-size: 1.2em;
+  margin-left: 8px;
+  padding: 0;
+}
+
+.delete-btn:hover {
+  color: #c82333;
 }
